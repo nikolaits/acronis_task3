@@ -675,15 +675,6 @@ export default {
     keys.forEach(key => {
       products.push(productsJSON[key]);
     });
-    // products.sort((a, b) => {
-    //   if (a.product_name < b.product_name) {
-    //     return -1;
-    //   }
-    //   if (a.product_name > b.product_name) {
-    //     return 1;
-    //   }
-    //   return 0;
-    // });
     this.items = _.uniqBy(products, "product_name");
     console.log("productsJSON", this.items);
   }
